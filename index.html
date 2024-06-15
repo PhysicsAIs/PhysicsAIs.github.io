@@ -1,115 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics Book</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Physics and AI in Oil and Gas</title>
     <style>
-        /* Additional inline styling for demonstration purposes */
-        .container {
+        body {
             display: flex;
+            font-family: Arial, sans-serif;
         }
-        .menu {
-            flex: 1;
-            background-color: #f4f4f4;
-            padding: 10px;
-        }
-        .content {
-            flex: 3;
+        nav {
+            width: 200px;
             padding: 20px;
+            background-color: #f4f4f4;
+            height: 100vh;
+            position: fixed;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        main {
+            margin-left: 220px;
+            padding: 20px;
+            flex: 1;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#mechanics">Mechanics</a></li>
-                <li><a href="#thermodynamics">Thermodynamics</a></li>
-                <li><a href="#electricity-magnetism">Electricity and Magnetism</a></li>
-                <li><a href="#optics">Optics</a></li>
-                <li><a href="#modern-physics">Modern Physics</a></li>
-                <li><a href="#machine-learning">Machine Learning Algorithms</a></li>
-                <li><a href="#contents">Contents</a></li>
-                <li><a href="#references">References</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <div id="introduction">
-                <h2>Introduction</h2>
-                <p>The integration of physics and AIholds transformative potential for enhancing our understanding of complex physical phenomena and addressing real-world challenges. Physics, grounded in fundamental laws and empirical observations, provides a robust framework for interpreting the natural world. However, many physical systems are characterized by intricate, non-linear interactions that traditional analytical methods struggle to solve comprehensively. Here, AI and machine learning, with its prowess in pattern recognition and data-driven modeling, steps in to bridge this gap. By leveraging large datasets and sophisticated algorithms, ML can uncover hidden relationships within physical systems, optimize experimental designs, and predict outcomes with unprecedented accuracy. This synergy is particularly impactful in fields such as climate modeling, quantum mechanics, and materials science, where it enables precise simulations and innovative solutions. For instance, ML algorithms can predict weather patterns more accurately, optimize energy consumption in smart grids, and accelerate the discovery of new materials with desirable properties. As we continue to harness the strengths of both physics and AI, we move closer to unraveling the complexities of the universe and devising practical solutions to some of the most pressing issues facing society today.</p>
-            </div>
-            <div id="mechanics">
-                <h2>Mechanics</h2>
-                <p>Study of motion, forces, and energy.</p>
-                  <ul>
-                      
-                      <li><a href="https://nbviewer.jupyter.org/github/PhysicsAIs/physics-machine-learning/blob/main/mechanic.ipynb">Logistic Regression Jupyter Notebook</a></li>
-                </ul>
-            </div>
-            <div id="thermodynamics">
-                <h2>Thermodynamics</h2>
-                <p>Understanding heat, energy, and work.</p>
-            </div>
-            <div id="electricity-magnetism">
-                <h2>Electricity and Magnetism</h2>
-                <p>Exploration of electric and magnetic phenomena.</p>
-            </div>
-            <div id="optics">
-                <h2>Optics</h2>
-                <p>Investigation of light and its behavior.</p>
-            </div>
-            <div id="modern-physics">
-                <h2>Modern Physics</h2>
-                <p>Study of relativity, quantum mechanics, and nuclear physics.</p>
-            </div>
-            <div id="machine-learning">
-                <h2>Machine Learning Algorithms</h2>
-                <p>Explore various Machine Learning Algorithms.</p>
-                <ul>
-                    <li>Linear Regression</li>
-                    <li>Logistic Regression</li>
-                    <li>Decision Trees</li>
-                    <li>Random Forest</li>
-                    <li>K-Nearest Neighbors (KNN)</li>
-                    <li>Support Vector Machines (SVM)</li>
-                    <li>Naive Bayes</li>
-                    <li>Neural Networks</li>
-                    <!-- Add more algorithms as needed -->
-                </ul>
-            </div>
-            <div id="contents">
-                <h2>Contents</h2>
-                <ul>
-                    <li>Chapter 1: Motion</li>
-                    <li>Chapter 2: Forces</li>
-                    <li>Chapter 3: Energy</li>
-                </ul>
-            </div>
-            <div id="references">
-                <h2>References</h2>
-                <p>List of references and citations used in the book.</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#mechanics">Mechanics</a></li>
+            <li><a href="#thermodynamics">Thermodynamics</a></li>
+            <li><a href="#electricity-magnetism">Electricity and Magnetism</a></li>
+            <li><a href="#optics">Optics</a></li>
+            <li><a href="#modern-physics">Modern Physics</a></li>
+            <li><a href="#machine-learning">Machine Learning Algorithms</a></li>
+            <li><a href="#contents">Contents</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>The integration of Physics and Artificial Intelligence (AI) is revolutionizing the Oil and Gas industry by enhancing the accuracy and efficiency of exploration and development.</p>
+            <img src="path/to/your/image.jpg" alt="Introduction Image">
+        </section>
+        <section id="mechanics">
+            <h2>Mechanics</h2>
+            <p>Mechanics plays a crucial role in understanding the physical behavior of drilling equipment and fluid flow in reservoirs.</p>
+            <img src="images/geology.jpg" alt="Mechanics Image">
+        </section>
+        <section id="thermodynamics">
+            <h2>Thermodynamics</h2>
+            <p>Thermodynamics helps in analyzing the heat and energy transformations in petroleum extraction and processing.</p>
+            <img src="images/geology.jpg" alt="Thermodynamics Image">
+        </section>
+        <section id="electricity-magnetism">
+            <h2>Electricity and Magnetism</h2>
+            <p>Electricity and magnetism are essential in geophysical exploration methods such as electromagnetic surveys.</p>
+            <img src="images/geology.jpg" alt="Electricity and Magnetism Image">
+        </section>
+        <section id="optics">
+            <h2>Optics</h2>
+            <p>Optics, including laser technologies, is used for precision measurements and analysis in various applications.</p>
+            <img src="images/geology.jpg" alt="Optics Image">
+        </section>
+        <section id="modern-physics">
+            <h2>Modern Physics</h2>
+            <p>Modern physics theories are applied to understand the quantum mechanical behavior of hydrocarbons at the molecular level.</p>
+            <img src="images/geology.jpg" alt="Modern Physics Image">
+        </section>
+        <section id="machine-learning">
+            <h2>Machine Learning Algorithms</h2>
+            <p>Machine learning algorithms enhance the interpretation of complex data sets, improving predictions and decision-making in exploration and development.</p>
+            <img src="images/geology.jpg" alt="Machine Learning Algorithms Image">
+        </section>
+        <section id="contents">
+            <h2>Contents</h2>
+            <p>Here you can find all the detailed information about each section and topic discussed.</p>
+            <img src="images/geology.jpg" alt="Contents Image">
+        </section>
+        <section id="references">
+            <h2>References</h2>
+            <p>A list of references and resources for further reading and exploration of the topics covered.</p>
+            <img src="images/geology.jpg" alt="References Image">
+        </section>
+    </main>
 </body>
-
 </html>
