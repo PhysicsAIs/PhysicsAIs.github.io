@@ -10,8 +10,8 @@ nav {
   width: 200px;
   position: fixed;
   top: 27.6px;
-  left: -100%; /* Sembunyikan nav di luar layar */
   padding: 24px 20px;
+  left: -100%; /* Sembunyikan nav di luar layar */
 }
 
 body.show-nav nav {
