@@ -1,0 +1,24 @@
+.container-card {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1.3rem;
+  transition: box-shadow 0.3s;
+  border: solid 0.8px #2c4e80;
+}
+.container-card:hover {
+  box-shadow: 1px 1px 24px -5px rgba(130, 130, 130, 0.69);
+  -webkit-box-shadow: 1px 1px 24px -5px rgba(130, 130, 130, 0.69);
+  -moz-box-shadow: 1px 1px 24px -5px rgba(130, 130, 130, 0.69);
+}
+.container-card img {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+.card-body {
+  padding-top: 9px;
+}
+
+.card-body h2 {
+  padding-bottom: 6px;
+}

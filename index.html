@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Physics and AI in Oil and Gas</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="assets/header.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/card.css" />
   </head>
   <body>
     <header class="header">
-      <div id="toggleButton" style="padding: 0 12px 0 12px">
+      <div style="padding: 6px 12px 6px 12px">
         <div
           style="
             display: flex;
@@ -17,139 +18,65 @@
             align-items: center;
           "
         >
-          <h4 style="color: white">Physics AI</h4>
           <div>
-            <svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Menu / Menu_Alt_01">
+            <div class="default">
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Menu / Menu_Alt_01">
+                  <path
+                    id="Vector"
+                    d="M12 17H19M5 12H19M5 7H19"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="closed" style="display: none">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  id="Vector"
-                  d="M12 17H19M5 12H19M5 7H19"
-                  stroke="#ffffff"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.69659 6.75287C7.4037 6.45998 6.92882 6.45998 6.63593 6.75287C6.34304 7.04576 6.34304 7.52064 6.63593 7.81353L11.1056 12.2832L6.63593 16.7529C6.34304 17.0458 6.34304 17.5206 6.63593 17.8135C6.92882 18.1064 7.4037 18.1064 7.69659 17.8135L12.1663 13.3439L16.636 17.8135C16.9289 18.1064 17.4037 18.1064 17.6966 17.8135C17.9895 17.5206 17.9895 17.0458 17.6966 16.7529L13.227 12.2832L17.6966 7.81353C17.9895 7.52064 17.9895 7.04576 17.6966 6.75287C17.4037 6.45998 16.9289 6.45998 16.636 6.75287L12.1663 11.2225L7.69659 6.75287Z"
+                  fill="white"
                 />
-              </g>
-            </svg>
+              </svg>
+            </div>
           </div>
+          <h4 style="color: white">Physics AI</h4>
         </div>
       </div>
       <nav class="body-header">
         <div>
-        <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#mechanics">Mechanics</a></li>
-                <li><a href="#thermodynamics">Thermodynamics</a></li>
-                    <li><a href="#electricity-magnetism">Electricity and Magnetism</a></li>
-                        <li><a href="#optics">Optics</a></li>
-                            <li><a href="#modern-physics">Modern Physics</a></li>
-                                <li><a href="#machine-learning">Machine Learning Algorithms</a></li>
-                                    <li><a href="#contents">Contents</a></li>
-                                        <li><a href="#references">References</a></li>
+          <a href="#introduction">Introduction</a>
+          <a href="#mechanics">Mechanics</a>
+          <a href="#thermodynamics">Thermodynamics</a>
+          <a href="#electricity-magnetism">Electricity and Magnetism</a>
+          <a href="#optics">Optics</a>
+          <a href="#modern-physics">Modern Physics</a>
+          <a href="#machine-learning">Machine Learning Algorithms</a>
+          <a href="#contents">Contents</a>
+          <a href="#references">References</a>
         </div>
-    </nav>
+      </nav>
     </header>
-    <!-- <nav>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#mechanics">Mechanics</a></li>
-        <li><a href="#thermodynamics">Thermodynamics</a></li>
-        <li><a href="#electricity-magnetism">Electricity and Magnetism</a></li>
-        <li><a href="#optics">Optics</a></li>
-        <li><a href="#modern-physics">Modern Physics</a></li>
-        <li><a href="#machine-learning">Machine Learning Algorithms</a></li>
-        <li><a href="#contents">Contents</a></li>
-        <li><a href="#references">References</a></li>
-      </ul>
-    </nav> -->
-    <main>
-      <section id="introduction">
-        <h2>Introduction</h2>
-        <div>
-          The integration of Physics and Artificial Intelligence (AI) is
-          revolutionizing the Oil and Gas industry by enhancing the accuracy and
-          efficiency of exploration and development.
-        </div>
-        <img src="images/geology.jpg" alt="Introduction Image" width="380" height="300"/>
-      </section>
-      <section id="mechanics">
-        <h2>Mechanics</h2>
-        <div>
-          Mechanics plays a crucial role in understanding the physical behavior
-          of drilling equipment and fluid flow in reservoirs.
-        </div>
-        <img src="images/geology.jpg" alt="Mechanics Image" width="380" height="300" />
-      </section>
-      <section id="thermodynamics">
-        <h2>Thermodynamics</h2>
-        <div>
-          Thermodynamics helps in analyzing the heat and energy transformations
-          in petroleum extraction and processing.
-        </div>
-        <img src="images/geology.jpg" alt="Thermodynamics Image" width="380" height="300" />
-      </section>
-      <section id="electricity-magnetism">
-        <h2>Electricity and Magnetism</h2>
-        <div>
-          Electricity and magnetism are essential in geophysical exploration
-          methods such as electromagnetic surveys.
-        </div>
-        <img src="images/geology.jpg" alt="Electricity and Magnetism Image" width="380" height="300" />
-      </section>
-      <section id="optics">
-        <h2>Optics</h2>
-        <div>
-          Optics, including laser technologies, is used for precision
-          measurements and analysis in various applications.
-        </div>
-        <img src="images/geology.jpg" alt="Optics Image" width="380" height="300"/>
-      </section>
-      <section id="modern-physics">
-        <h2>Modern Physics</h2>
-        <div>
-          Modern physics theories are applied to understand the quantum
-          mechanical behavior of hydrocarbons at the molecular level.
-        </div>
-        <img src="images/geology.jpg" alt="Modern Physics Image" width="380" height="300" />
-      </section>
-      <section id="machine-learning">
-        <h2>Machine Learning Algorithms</h2>
-        <div>
-          Machine learning algorithms enhance the interpretation of complex data
-          sets, improving predictions and decision-making in exploration and
-          development.
-        </div>
-        <img src="images/geology.jpg" alt="Machine Learning Algorithms Image" width="380" height="300" />
-      </section>
-      <section id="contents">
-        <h2>Contents</h2>
-        <div>
-          Here you can find all the detailed information about each section and
-          topic discussed.
-        </div>
-        <img src="images/geology.jpg" alt="Contents Image" width="380" height="300" />
-      </section>
-      <section id="references">
-        <h2>References</h2>
-        <div>
-          A list of references and resources for further reading and exploration
-          of the topics covered.
-        </div>
-        <img src="images/geology.jpg" alt="References Image" width="380" height="300" />
-      </section>
-    </main>
-    <script>
-      const toggleButton = document.getElementById("toggleButton");
-      const nav = document.querySelector(".body-header");
 
-      toggleButton.addEventListener("click", function () {
-        nav.classList.toggle("show");
-      });
-    </script>
+    <main id="data-container" class="body-container"></main>
+
+    <script src="main.js"></script>
   </body>
 </html>
