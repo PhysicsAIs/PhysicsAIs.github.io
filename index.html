@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional inline styling for demonstration purposes */
+        .container {
+            display: flex;
+        }
+        .menu {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#fundamentals">Physics Fundamentals</a></li>
+                <li><a href="#contents">Contents</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="introduction">
+                <h2>Introduction</h2>
+                <p>This is the introduction section of the book.</p>
+            </div>
+            <div id="fundamentals">
+                <h2>Physics Fundamentals</h2>
+                <p>This section covers the fundamental concepts of physics.</p>
+            </div>
+            <div id="contents">
+                <h2>Contents</h2>
+                <ul>
+                    <li>Chapter 1: Motion</li>
+                    <li>Chapter 2: Forces</li>
+                    <li>Chapter 3: Energy</li>
+                </ul>
+            </div>
+            <div id="references">
+                <h2>References</h2>
+                <p>List of references and citations used in the book.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
