@@ -1,106 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Physics and AI in Oil and Gas</title>
-    <style>
-        body {
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="toggleButton" style="padding: 0 12px 0 12px">
+        <div
+          style="
             display: flex;
-            font-family: Arial, sans-serif;
-        }
-        nav {
-            width: 200px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            height: 100vh;
-            position: fixed;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 10px 0;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        main {
-            margin-left: 220px;
-            padding: 20px;
-            flex: 1;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#mechanics">Mechanics</a></li>
-            <li><a href="#thermodynamics">Thermodynamics</a></li>
-            <li><a href="#electricity-magnetism">Electricity and Magnetism</a></li>
-            <li><a href="#optics">Optics</a></li>
-            <li><a href="#modern-physics">Modern Physics</a></li>
-            <li><a href="#machine-learning">Machine Learning Algorithms</a></li>
-            <li><a href="#contents">Contents</a></li>
-            <li><a href="#references">References</a></li>
-        </ul>
-    </nav>
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <h4 style="color: white">Physics AI</h4>
+          <div>
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Menu / Menu_Alt_01">
+                <path
+                  id="Vector"
+                  d="M12 17H19M5 12H19M5 7H19"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav class="body-header">
+        <a href="#introduction">Introduction</a>
+        <a href="#mechanics">Mechanics</a>
+        <a href="#thermodynamics">Thermodynamics</a>
+        <a href="#electricity-magnetism">Electricity and Magnetism</a>
+        <a href="#optics">Optics</a>
+        <a href="#modern-physics">Modern Physics</a>
+        <a href="#machine-learning">Machine Learning Algorithms</a>
+        <a href="#contents">Contents</a>
+        <a href="#references">References</a>
+      </nav>
+    </header>
+    <!-- <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#mechanics">Mechanics</a></li>
+        <li><a href="#thermodynamics">Thermodynamics</a></li>
+        <li><a href="#electricity-magnetism">Electricity and Magnetism</a></li>
+        <li><a href="#optics">Optics</a></li>
+        <li><a href="#modern-physics">Modern Physics</a></li>
+        <li><a href="#machine-learning">Machine Learning Algorithms</a></li>
+        <li><a href="#contents">Contents</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav> -->
     <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>The integration of Physics and Artificial Intelligence (AI) is revolutionizing the Oil and Gas industry by enhancing the accuracy and efficiency of exploration and development.</p>
-            <img src="images/geology.jpg" alt="Introduction Image">
-        </section>
-        <section id="mechanics">
-            <h2>Mechanics</h2>
-            <p>Mechanics plays a crucial role in understanding the physical behavior of drilling equipment and fluid flow in reservoirs.</p>
-            <img src="images/geology.jpg" alt="Mechanics Image">
-        </section>
-        <section id="thermodynamics">
-            <h2>Thermodynamics</h2>
-            <p>Thermodynamics helps in analyzing the heat and energy transformations in petroleum extraction and processing.</p>
-            <img src="images/geology.jpg" alt="Thermodynamics Image">
-        </section>
-        <section id="electricity-magnetism">
-            <h2>Electricity and Magnetism</h2>
-            <p>Electricity and magnetism are essential in geophysical exploration methods such as electromagnetic surveys.</p>
-            <img src="images/geology.jpg" alt="Electricity and Magnetism Image">
-        </section>
-        <section id="optics">
-            <h2>Optics</h2>
-            <p>Optics, including laser technologies, is used for precision measurements and analysis in various applications.</p>
-            <img src="images/geology.jpg" alt="Optics Image">
-        </section>
-        <section id="modern-physics">
-            <h2>Modern Physics</h2>
-            <p>Modern physics theories are applied to understand the quantum mechanical behavior of hydrocarbons at the molecular level.</p>
-            <img src="images/geology.jpg" alt="Modern Physics Image">
-        </section>
-        <section id="machine-learning">
-            <h2>Machine Learning Algorithms</h2>
-            <p>Machine learning algorithms enhance the interpretation of complex data sets, improving predictions and decision-making in exploration and development.</p>
-            <img src="images/geology.jpg" alt="Machine Learning Algorithms Image">
-        </section>
-        <section id="contents">
-            <h2>Contents</h2>
-            <p>Here you can find all the detailed information about each section and topic discussed.</p>
-            <img src="images/geology.jpg" alt="Contents Image">
-        </section>
-        <section id="references">
-            <h2>References</h2>
-            <p>A list of references and resources for further reading and exploration of the topics covered.</p>
-            <img src="images/geology.jpg" alt="References Image">
-        </section>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          The integration of Physics and Artificial Intelligence (AI) is
+          revolutionizing the Oil and Gas industry by enhancing the accuracy and
+          efficiency of exploration and development.
+        </p>
+        <img src="images/geology.jpg" alt="Introduction Image" />
+      </section>
+      <section id="mechanics">
+        <h2>Mechanics</h2>
+        <p>
+          Mechanics plays a crucial role in understanding the physical behavior
+          of drilling equipment and fluid flow in reservoirs.
+        </p>
+        <img src="images/geology.jpg" alt="Mechanics Image" />
+      </section>
+      <section id="thermodynamics">
+        <h2>Thermodynamics</h2>
+        <p>
+          Thermodynamics helps in analyzing the heat and energy transformations
+          in petroleum extraction and processing.
+        </p>
+        <img src="images/geology.jpg" alt="Thermodynamics Image" />
+      </section>
+      <section id="electricity-magnetism">
+        <h2>Electricity and Magnetism</h2>
+        <p>
+          Electricity and magnetism are essential in geophysical exploration
+          methods such as electromagnetic surveys.
+        </p>
+        <img src="images/geology.jpg" alt="Electricity and Magnetism Image" />
+      </section>
+      <section id="optics">
+        <h2>Optics</h2>
+        <p>
+          Optics, including laser technologies, is used for precision
+          measurements and analysis in various applications.
+        </p>
+        <img src="images/geology.jpg" alt="Optics Image" />
+      </section>
+      <section id="modern-physics">
+        <h2>Modern Physics</h2>
+        <p>
+          Modern physics theories are applied to understand the quantum
+          mechanical behavior of hydrocarbons at the molecular level.
+        </p>
+        <img src="images/geology.jpg" alt="Modern Physics Image" />
+      </section>
+      <section id="machine-learning">
+        <h2>Machine Learning Algorithms</h2>
+        <p>
+          Machine learning algorithms enhance the interpretation of complex data
+          sets, improving predictions and decision-making in exploration and
+          development.
+        </p>
+        <img src="images/geology.jpg" alt="Machine Learning Algorithms Image" />
+      </section>
+      <section id="contents">
+        <h2>Contents</h2>
+        <p>
+          Here you can find all the detailed information about each section and
+          topic discussed.
+        </p>
+        <img src="images/geology.jpg" alt="Contents Image" />
+      </section>
+      <section id="references">
+        <h2>References</h2>
+        <p>
+          A list of references and resources for further reading and exploration
+          of the topics covered.
+        </p>
+        <img src="images/geology.jpg" alt="References Image" />
+      </section>
     </main>
-</body>
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const nav = document.querySelector(".body-header");
+
+      toggleButton.addEventListener("click", function () {
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
 </html>
