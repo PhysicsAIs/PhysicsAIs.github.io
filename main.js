@@ -4,7 +4,7 @@ const data = [
     title: "Mechanics",
     content:
       "Mechanics plays a crucial role in understanding the physical behavior of drilling equipment and fluid flow in reservoirs.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/mechanics.jpg",
     alt: "Mechanics Image",
   },
   {
@@ -12,7 +12,7 @@ const data = [
     title: "Thermodynamics",
     content:
       "Thermodynamics helps in analyzing the heat and energy transformations in petroleum extraction and processing.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/petrophysics.jpg",
     alt: "Thermodynamics Image",
   },
   {
@@ -20,7 +20,7 @@ const data = [
     title: "Electricity and Magnetism",
     content:
       "Electricity and magnetism are essential in geophysical exploration methods such as electromagnetic surveys.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/rock_physics.jpg",
     alt: "Electricity and Magnetism Image",
   },
   {
@@ -28,7 +28,7 @@ const data = [
     title: "Optics",
     content:
       "Optics, including laser technologies, is used for precision measurements and analysis in various applications.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/tech_ai.jpg",
     alt: "Optics Image",
   },
   {
@@ -36,7 +36,7 @@ const data = [
     title: "Modern Physics",
     content:
       "Modern physics theories are applied to understand the quantum mechanical behavior of hydrocarbons at the molecular level.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/rock_physics.jpg",
     alt: "Modern Physics Image",
   },
   {
@@ -44,7 +44,7 @@ const data = [
     title: "Machine Learning Algorithms",
     content:
       "Machine learning algorithms enhance the interpretation of complex data sets, improving predictions and decision-making in exploration and development.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/tech_ai.jpg",
     alt: "Machine Learning Algorithms Image",
   },
   {
