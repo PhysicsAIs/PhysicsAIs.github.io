@@ -1,97 +1,120 @@
 const data = [
-  {
-    id: "mechanics",
-    title: "Mechanics",
-    content:
-      "Mechanics plays a crucial role in understanding the physical behavior of drilling equipment and fluid flow in reservoirs.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Mechanics Image",
-  },
-  {
-    id: "thermodynamics",
-    title: "Thermodynamics",
-    content:
-      "Thermodynamics helps in analyzing the heat and energy transformations in petroleum extraction and processing.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Thermodynamics Image",
-  },
-  {
-    id: "electricity-magnetism",
-    title: "Electricity and Magnetism",
-    content:
-      "Electricity and magnetism are essential in geophysical exploration methods such as electromagnetic surveys.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Electricity and Magnetism Image",
-  },
-  {
-    id: "optics",
-    title: "Optics",
-    content:
-      "Optics, including laser technologies, is used for precision measurements and analysis in various applications.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Optics Image",
-  },
-  {
-    id: "modern-physics",
-    title: "Modern Physics",
-    content:
-      "Modern physics theories are applied to understand the quantum mechanical behavior of hydrocarbons at the molecular level.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Modern Physics Image",
-  },
-  {
-    id: "machine-learning",
-    title: "Machine Learning Algorithms",
-    content:
-      "Machine learning algorithms enhance the interpretation of complex data sets, improving predictions and decision-making in exploration and development.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Machine Learning Algorithms Image",
-  },
-  {
-    id: "contents",
-    title: "Contents",
-    content:
-      "Here you can find all the detailed information about each section and topic discussed.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "Contents Image",
-  },
-  {
-    id: "references",
-    title: "References",
-    content:
-      "A list of references and resources for further reading and exploration of the topics covered.",
-    imageSrc: "assets/images/geology.jpg",
-    alt: "References Image",
-  },
-];
-
-const dataContainer = document.getElementById("data-container");
-
-data.forEach((item) => {
-  const containerCard = document.createElement("div");
-  containerCard.classList.add("container-card");
-
-  const image = document.createElement("img");
-  image.src = item.imageSrc;
-  image.alt = item.alt;
-  containerCard.appendChild(image);
-
-  const cardBody = document.createElement("div");
-  cardBody.classList.add("card-body");
-
-  const h2 = document.createElement("h2");
-  h2.textContent = item.title;
-  cardBody.appendChild(h2);
-
-  const content = document.createElement("div");
-  content.textContent = item.content;
-  cardBody.appendChild(content);
-
-  containerCard.appendChild(cardBody);
-
-  dataContainer.appendChild(containerCard);
-});
-
+    {
+      id: "geophysics",
+      title: "Geophysics",
+      content: `
+        Geophysics applies physical methods to explore and analyze the subsurface, crucial for identifying potential oil and gas reservoirs. Key techniques include:
+  
+        1. Seismology
+           - Seismic Wave Analysis: Seismic surveys use controlled sources to generate waves that travel through the Earth. By analyzing the reflected and refracted waves, geophysicists can create detailed images of subsurface structures.
+           - 3D Seismic Imaging: Advanced techniques provide high-resolution, three-dimensional images of potential reservoirs, helping to identify the best drilling locations.
+  
+        2. Gravimetry
+           - Gravitational Field Measurement: Variations in the Earth's gravitational field help identify subsurface density anomalies, indicating the presence of oil and gas deposits.
+  
+        3. Magnetometry
+           - Magnetic Field Studies: Mapping variations in the Earth's magnetic field assists in understanding the geological structures that might host hydrocarbon reservoirs.
+  
+        4. Electromagnetic Methods
+           - Resistivity and Conductivity Surveys: These methods measure the electrical properties of the subsurface, useful for identifying fluid-filled reservoirs.
+      `,
+      imageSrc: "assets/images/geophysics.jpg",
+      alt: "Geophysics Image"
+    },
+    {
+      id: "geology",
+      title: "Geology",
+      content: `
+        Geology provides the foundational understanding of the Earth’s materials and processes, essential for exploring and developing oil and gas resources. Key areas include:
+  
+        1. Plate Tectonics
+           - Basin Formation: Understanding the tectonic processes that form sedimentary basins, which are prime locations for oil and gas deposits.
+           - Structural Geology: Analyzing the deformation of rocks to locate traps and folds where hydrocarbons might accumulate.
+  
+        2. Geochronology
+           - Dating Sedimentary Layers: Using radiometric dating to establish the age of rock layers, helping to reconstruct the geological history of a basin and predict the presence of hydrocarbons.
+  
+        3. Mineralogy and Petrology
+           - Rock Composition Analysis: Identifying the types of rocks and minerals present in a potential reservoir to assess its quality and potential productivity.
+           - Phase Transitions: Studying the conditions under which hydrocarbons are generated and preserved in the subsurface.
+      `,
+      imageSrc: "assets/images/geology.jpg",
+      alt: "Geology Image"
+    },
+    {
+      id: "petrophysics",
+      title: "Petrophysics",
+      content: `
+        Petrophysics focuses on the physical and chemical properties of reservoir rocks and their interactions with fluids, critical for evaluating reservoir potential. Key areas include:
+  
+        1. Porosity and Permeability
+           - Reservoir Quality Assessment: Measuring porosity (the amount of void space in a rock) and permeability (the ability of fluids to flow through the rock) to determine the storage and flow capacity of a reservoir.
+  
+        2. Fluid Saturation
+           - Hydrocarbon Detection: Determining the amount and distribution of hydrocarbons within the reservoir rock through well logging techniques.
+  
+        3. Well Logging
+           - Data Acquisition: Using tools lowered into boreholes to measure the physical properties of the surrounding rock and fluids, providing detailed information about the reservoir.
+      `,
+      imageSrc: "assets/images/petrophysics.jpg",
+      alt: "Petrophysics Image"
+    },
+    {
+      id: "geohazard",
+      title: "Geohazard",
+      content: `
+        Geohazards involve the assessment and mitigation of geological risks that can impact oil and gas operations. Key areas include:
+  
+        1. Seismic Risk Assessment
+           - Earthquake Hazard Analysis: Evaluating the potential for seismic activity that could affect drilling operations and infrastructure stability.
+  
+        2. Slope Stability
+           - Landslide and Submarine Slope Failure: Assessing risks related to landslides and underwater slope failures that could damage offshore platforms and pipelines.
+  
+        3. Subsurface Gas Migration
+           - Hazard Identification: Identifying and managing the risks of gas migration from subsurface reservoirs to prevent blowouts and other drilling hazards.
+      `,
+      imageSrc: "assets/images/geohazard.jpg",
+      alt: "Geohazard Image"
+    },
+    {
+      id: "drilling",
+      title: "Drilling",
+      content: `
+        Drilling involves the technical processes of creating boreholes to extract oil and gas. Key areas include:
+  
+        1. Drilling Mechanics
+           - Borehole Stability: Applying principles of rock mechanics to maintain the stability of the borehole and prevent collapse.
+           - Drilling Fluid Dynamics: Managing drilling fluids to optimize pressure control and cuttings removal.
+  
+        2. Directional Drilling
+           - Precision Drilling: Using advanced techniques to drill wells at precise angles and directions to reach specific reservoir targets and maximize recovery.
+  
+        3. Wellbore Integrity
+           - Casing and Cementing: Ensuring the structural integrity of the wellbore through proper casing and cementing practices to prevent leaks and blowouts.
+      `,
+      imageSrc: "assets/images/drilling.jpg",
+      alt: "Drilling Image"
+    },
+    {
+      id: "production",
+      title: "Production",
+      content: `
+        Production encompasses the extraction and processing of hydrocarbons. Key areas include:
+  
+        1. Reservoir Management
+           - Enhanced Oil Recovery: Applying techniques such as water flooding, gas injection, and chemical EOR to maximize hydrocarbon extraction from the reservoir.
+  
+        2. Flow Assurance
+           - Pipeline Integrity: Ensuring the continuous and efficient flow of hydrocarbons from the reservoir to the surface and through pipelines by managing issues like hydrate formation and wax deposition.
+  
+        3. Production Monitoring
+           - Real-time Data Analysis: Using sensors and monitoring systems to track production rates, reservoir pressure, and fluid composition, enabling optimized production strategies.
+      `,
+      imageSrc: "assets/images/production.jpg",
+      alt: "Production Image"
+    }
+  ];  
 // header
 // document.addEventListener("DOMContentLoaded", function () {
 //   const nav = document.querySelector(".body-header");
