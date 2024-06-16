@@ -52,7 +52,7 @@ const data = [
     title: "Python ",
     content:
       "Python's extensive libraries and frameworks enable developers to effortlessly create robust data analysis tools. It can analyze large datasets, identify patterns, and draw meaningful conclusions. Python's broad range of data analysis libraries allows for the swift creation of sophisticated applications. It also automates complex tasks like creating predictive models and forecasting future trends. With its powerful machine learning libraries, developers can analyze large datasets and uncover patterns. Python also offers visualization tools for creating captivating visualizations, including charts, graphs, and interactive dashboards. In the oil and gas industry, Python is a valuable tool for data analysis, providing a wide range of capabilities for automating tasks, creating powerful tools, and generating insightful visualizations to facilitate better decision-making.",
-    imageSrc: "assets/images/geology.jpg",
+    imageSrc: "assets/images/python.jpg",
     alt: "Contents Image",
   },
   {
